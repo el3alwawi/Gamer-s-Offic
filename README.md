@@ -1,1 +1,2 @@
-# Gamer-s-Offic
+# myGObot
+GO Bot
