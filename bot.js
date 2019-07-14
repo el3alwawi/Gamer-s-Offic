@@ -28,6 +28,63 @@ var Canvas = require('canvas')
 const PORT = process.env.PORT || 5000;
 
 
+ var http = require('http');
+ var path = require('path');
+
+ http.createServer(function (request, response) {
+
+    console.log('request starting for ');
+    console.log(request);
+
+    var filePath = '.' + request.url;
+    if (filePath == './')
+        filePath = './index.html';
+
+    console.log(filePath);
+    var extname = path.extname(filePath);
+    var contentType = 'text/html';
+    switch (extname) {
+        case '.js':
+            contentType = 'text/javascript';
+            break;
+        case '.css':
+            contentType = 'text/css';
+            break;
+    }
+
+    path.exists(filePath, function(exists) {
+
+        if (exists) {
+            fs.readFile(filePath, function(error, content) {
+                if (error) {
+                    response.writeHead(500);
+                    response.end();
+                }
+                else {
+                    response.writeHead(200, { 'Content-Type': contentType });
+                    response.end(content, 'utf-8');
+                }
+            });
+        }
+        else {
+            response.writeHead(404);
+            response.end();
+        }
+    });
+
+ }).listen(5000);
+
+
+
+
+
+
+
+
+
+
+
+
 client.on('ready', function(){
     var ms = 15000 ;
     var setGame = [`${client.guilds.size} Server`,'invite bot | for add this bot👾 in your server',`${client.users.size} Members`,'اوامر البوت 📌 G-help | G-مساعدة','Bot By: DEX Gamer'];
