@@ -37,7 +37,7 @@ app.get('/*', (req,res)=>{
 res.sendFile(path.join(__dirname, '/dist/myapp/index.html'));
 });
 
-var port_number = server.listen(process.env.PORT || 3000);
+var port_number = .listen(process.env.PORT || 3000);
 app.listen(port_number);
 
 
