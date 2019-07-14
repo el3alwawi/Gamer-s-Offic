@@ -25,54 +25,20 @@ const sql = require("sqlite");
 const dateFormat = require('dateformat'); 
 const pretty = require('pretty-ms') 
 var Canvas = require('canvas')
-const PORT = process.env.PORT || 5000;
 
+const express= require('express'),
+path= require('path');
 
- var http = require('http');
- var path = require('path');
+const app =express();
 
- http.createServer(function (request, response) {
+app.use(express.static('./dist/re-mi'));
 
-    console.log('request starting for ');
-    console.log(request);
+app.get('/*', (req,res)=>{
+res.sendFile(path.join(__dirname, '/dist/myapp/index.html'));
+});
 
-    var filePath = '.' + request.url;
-    if (filePath == './')
-        filePath = './index.html';
-
-    console.log(filePath);
-    var extname = path.extname(filePath);
-    var contentType = 'text/html';
-    switch (extname) {
-        case '.js':
-            contentType = 'text/javascript';
-            break;
-        case '.css':
-            contentType = 'text/css';
-            break;
-    }
-
-    path.exists(filePath, function(exists) {
-
-        if (exists) {
-            fs.readFile(filePath, function(error, content) {
-                if (error) {
-                    response.writeHead(500);
-                    response.end();
-                }
-                else {
-                    response.writeHead(200, { 'Content-Type': contentType });
-                    response.end(content, 'utf-8');
-                }
-            });
-        }
-        else {
-            response.writeHead(404);
-            response.end();
-        }
-    });
-
- }).listen(5000);
+var port_number = server.listen(process.env.PORT || 3000);
+app.listen(port_number);
 
 
 
