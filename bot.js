@@ -25,8 +25,8 @@ const sql = require("sqlite");
 const dateFormat = require('dateformat'); 
 const pretty = require('pretty-ms') 
 var Canvas = require('canvas')
-var port = process.env.PORT || 5000;
-
+const PORT = process.env.PORT || 5000;
+app.listen(PORT);
 
 
 client.on('ready', function(){
