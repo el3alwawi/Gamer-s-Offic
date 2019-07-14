@@ -26,7 +26,6 @@ const dateFormat = require('dateformat');
 const pretty = require('pretty-ms') 
 var Canvas = require('canvas')
 const PORT = process.env.PORT || 5000;
-app.listen(PORT);
 
 
 client.on('ready', function(){
