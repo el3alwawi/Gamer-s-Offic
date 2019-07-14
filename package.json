@@ -3,7 +3,7 @@
   "version": "4.0.0",
   "adonis-version": "4.0.0",
   "description": "Smallest possible application for adonisjs",
-  "main": "index.js",
+  "main": "bot.js",
   "scripts": {
     "start": "node server.js",
     "test": "node ace test",
