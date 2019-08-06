@@ -34,9 +34,8 @@ client.on('message', message => {
 	if (message.content.startsWith("<@556833562549026816>")){
 let embed = new Discord.RichEmbed() 
     .setTitle('😉 **هلا وغلا**')
-    .addField('**ثواني بس ..**','** **',true)
-    .addField('🎮 **قاعد العب هههههه**','** **',true)
-    .setThumbnail('https://fotos.web.sapo.io/i/ocb020908/1734792_p9V9K.gif')
+    .addField('**ثواني بس .. قاعد العب ومركززززز**','** **',true)
+    .setThumbnail('https://media.giphy.com/media/y0NFayaBeiWEU/giphy.gif')
     .setTitle('**Click here to add!**')
     .setURL("https://discord.gg/whAxwvd")
     .setAuthor(message.author.username)
@@ -98,6 +97,20 @@ client.on('message', message => {
     .setAuthor(message.author.username)
     .addField(`**أنا أرقصلك أحسن يلا شوووف شوووووف ..**`,'** **',true) 
     .setImage('https://66.media.tumblr.com/tumblr_lefflpx6cz1qcmdmi.gif')
+    .setTitle('**Clicl here to add ..**')
+     message.channel.sendEmbed(embed) 
+      }
+    })
+
+client.on('message', message => {
+    if (message.content.startsWith("💤")) {
+    let embed = new Discord.RichEmbed() 
+    .setColor("#ffffff")
+    .setTimestamp()
+    .setURL(`${message.author.avatarURL}`)
+    .setAuthor(message.author.username)
+    .addField(`**انا نايم ..**`,'** **',true) 
+    .setImage('https://thumbs.gfycat.com/ExcitableLonelyEasternnewt-size_restricted.gif')
     .setTitle('**Clicl here to add ..**')
      message.channel.sendEmbed(embed) 
       }
