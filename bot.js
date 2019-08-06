@@ -30,6 +30,85 @@ var Canvas = require('canvas')
 
 
 
+client.on('message', message => {
+	if (message.content.startsWith("<@556833562549026816>")){
+let embed = new Discord.RichEmbed() 
+    .setTitle('😉 **هلا وغلا**')
+    .addField('**ثواني بس ..**','** **',true)
+    .addField('🎮 **قاعد العب هههههه**','** **',true)
+    .setThumbnail('https://fotos.web.sapo.io/i/ocb020908/1734792_p9V9K.gif')
+    .setTitle('**Click here to add!**')
+    .setURL("https://discord.gg/Myx5G9Q")
+    .setAuthor(message.author.username)
+    .setColor("RANDOM")
+    .setTimestamp()
+    .setURL(`${message.author.avatarURL}`)
+    message.channel.sendEmbed(embed) 
+      }
+    })
+
+client.on('message', message => {
+    if (message.content.startsWith("👍")) {
+    let embed = new Discord.RichEmbed() 
+    .setColor("#ffffff")
+    .setTimestamp()
+    .setURL(`${message.author.avatarURL}`)
+    .setAuthor(message.author.username)
+    .addField(`**خوووذلك لايك ههههه**`,'** **',true) 
+    .setImage('http://sarahcreations.s.a.pic.centerblog.net/super.gif')
+    .setTitle('**Clicl here to add ..**')
+     message.channel.sendEmbed(embed) 
+      }
+    })
+
+client.on('message', message => {
+    if (message.content.startsWith("👎")) {
+    let embed = new Discord.RichEmbed() 
+    .setColor("#ffffff")
+    .setTimestamp()
+    .setURL(`${message.author.avatarURL}`)
+    .setAuthor(message.author.username)
+    .addField(`**خوووذلك ديس لايك طيب ...**`,'** **',true) 
+    .setImage('https://media.giphy.com/media/7TN8wR9W6YCGY/giphy.gif')
+    .setTitle('**Clicl here to add ..**')
+     message.channel.sendEmbed(embed) 
+      }
+    })
+
+client.on('message', message => {
+    if (message.content.startsWith("❤")) {
+    let embed = new Discord.RichEmbed() 
+    .setColor("#ffffff")
+    .setTimestamp()
+    .setURL(`${message.author.avatarURL}`)
+    .setAuthor(message.author.username)
+    .addField(`**واحد حط قلب وااااحد حط قلـــــــب ♥ ..**`,'** **',true) 
+    .setImage('http://oyster.ignimgs.com/social/avatars/users2/17/8190098-1467575171.gif')
+    .setTitle('**Clicl here to add ..**')
+     message.channel.sendEmbed(embed) 
+      }
+    })
+
+client.on('message', message => {
+    if (message.content.startsWith("🕺")) {
+    let embed = new Discord.RichEmbed() 
+    .setColor("#ffffff")
+    .setTimestamp()
+    .setURL(`${message.author.avatarURL}`)
+    .setAuthor(message.author.username)
+    .addField(`**أنا أرقصلك أحسن يلا شوووف شوووووف ..**`,'** **',true) 
+    .setImage('https://66.media.tumblr.com/tumblr_lefflpx6cz1qcmdmi.gif')
+    .setTitle('**Clicl here to add ..**')
+     message.channel.sendEmbed(embed) 
+      }
+    })
+
+
+
+
+
+
+
 
 
 
