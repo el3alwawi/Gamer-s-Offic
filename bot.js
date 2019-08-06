@@ -48,7 +48,7 @@ let embed = new Discord.RichEmbed()
     })
 
 client.on('message', message => {
-    if (message.content.startsWith("👍") | ("لايك")) {
+    if (message.content.startsWith("👍") || ("لايك")) {
     let embed = new Discord.RichEmbed() 
     .setColor("#ffffff")
     .setTimestamp()
