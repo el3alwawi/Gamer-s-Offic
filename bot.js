@@ -38,7 +38,7 @@ let embed = new Discord.RichEmbed()
     .addField('🎮 **قاعد العب هههههه**','** **',true)
     .setThumbnail('https://fotos.web.sapo.io/i/ocb020908/1734792_p9V9K.gif')
     .setTitle('**Click here to add!**')
-    .setURL("https://discord.gg/Myx5G9Q")
+    .setURL("https://discord.gg/whAxwvd")
     .setAuthor(message.author.username)
     .setColor("RANDOM")
     .setTimestamp()
@@ -48,7 +48,7 @@ let embed = new Discord.RichEmbed()
     })
 
 client.on('message', message => {
-    if (message.content.startsWith("👍")) {
+    if (message.content.startsWith("👍") | ("لايك")) {
     let embed = new Discord.RichEmbed() 
     .setColor("#ffffff")
     .setTimestamp()
