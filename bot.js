@@ -35,7 +35,6 @@ client.on('message', message => {
 let embed = new Discord.RichEmbed() 
     .setTitle('😉 **هلا وغلا**')
     .addField('**ثواني بس .. قاعد العب ومركززززز**','** **',true)
-    .setThumbnail('🎮')
     .setImage('https://media.giphy.com/media/y0NFayaBeiWEU/giphy.gif')
     .setTitle('**Click here to add!**')
     .setURL("https://discord.gg/whAxwvd")
