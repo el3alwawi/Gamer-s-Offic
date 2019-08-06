@@ -34,7 +34,7 @@ client.on('message', message => {
 	if (message.content.startsWith("<@556833562549026816>")){
 let embed = new Discord.RichEmbed() 
     .setTitle('😉 **هلا وغلا**')
-    .addField('**ثواني بس .. قاعد العب ومركززززز**','** **',true)
+    .addField('**ثواني بس .. ديكس قاعد يلعب ومركزززز ههههههه**','** **',true)
     .setImage('https://media.giphy.com/media/y0NFayaBeiWEU/giphy.gif')
     .setTitle('**Click here to add!**')
     .setURL("https://discord.gg/whAxwvd")
