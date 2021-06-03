@@ -34,7 +34,7 @@ client.on('message', message => {
 	if (message.content.startsWith("<@556833562549026816>")){
 let embed = new Discord.RichEmbed() 
     .setTitle('😉 **هلا وغلا**')
-    .addField('**ثواني بس .. ديكس قاعد يلعب ومركزززز ههههههه**','** **',true)
+    .addField('**ثواني بس .. ديكس قاعد يلعب ومركزززز ههههه**','** **',true)
     .setImage('https://media.giphy.com/media/y0NFayaBeiWEU/giphy.gif')
     .setTitle('**Click here to add!**')
     .setURL("https://discord.gg/whAxwvd")
@@ -535,15 +535,15 @@ client.on('message' , async (message) => {
 });
 
 
-client.on('typingStart', (ch, user) => {
-    if(user.presence.status === 'offline') {
-        
-        ch.send(`${user} من ايش مستخبي حاطط اوفلاين وتكتب هههههههه`)
-        .then(msg => {
-            msg.delete(10000)
-        })
-    }
-})
+//client.on('typingStart', (ch, user) => {
+ //   if(user.presence.status === 'offline') {
+  //      
+   //     ch.send(`${user} من ايش مستخبي حاطط اوفلاين وتكتب هههههههه`)
+    //    .then(msg => {
+     //       msg.delete(10000)
+      //  })
+//    }
+//})
 
 
 
