@@ -460,7 +460,7 @@ client.on('message', message => {
          });
 
 client.on('message' , async (message) => {
-       if(message.content.startsWith(`<@${client.user.id}>`)) {
+       if(message.content.startsWith(`850067642282016768`)) {
               message.channel.startTyping()
  let responses = [
        'كيف يمكن اساعدك' ,
@@ -535,16 +535,6 @@ client.on('message' , async (message) => {
 });
 
 
-//client.on('typingStart', (ch, user) => {
- //   if(user.presence.status === 'offline') {
-  //      
-   //     ch.send(`${user} من ايش مستخبي حاطط اوفلاين وتكتب هههههههه`)
-    //    .then(msg => {
-     //       msg.delete(10000)
-      //  })
-//    }
-//})
-
 
 
 // لما تجي رسالة للبوت في الخاص
@@ -558,7 +548,7 @@ client.on('message', function(message) {
         .setThumbnail(`${message.author.avatarURL}`)
         .setDescription(`\n\n\`\`\`${message.content}\`\`\``)
         .setFooter(`From ${message.author.tag} (${message.author.presence.status.toUpperCase()})`)
-    client.channels.get("558736018434687006").send({embed:Dark});
+    client.channels.get("850002031094661157").send({embed:Dark});
     }
 });
 
